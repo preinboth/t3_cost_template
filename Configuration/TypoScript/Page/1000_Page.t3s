@@ -1,0 +1,121 @@
+config.contentObjectExceptionHandler = 0
+
+page = PAGE
+page.typeNum = 0
+
+# <!--[if lt IE 7]>		<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+# <!--[if IE 7]>			<html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+# <!--[if IE 8]>			<html class="no-js lt-ie9" lang=""> <![endif]-->
+# <!--[if gt IE 8]><!-->	<html class="no-js" lang="zxx"> <!--<![endif]-->
+
+### Meta ###
+page.meta {
+    X-UA-Compatible = IE=edge,chrome=1
+    X-UA-Compatible.httpEquivalent = 1
+
+    viewport = width=device-width, initial-scale=1
+
+    description.field   = description
+    description.ifEmpty = Das ist die Standardbeschreibung.
+
+    keywords.field   = keywords
+    keywords.ifEmpty = keyword1,keyword2,keyword3
+
+    author.field   = author
+    author.ifEmpty = {$author}
+}
+
+### FavIcon einbinden ###
+page.shortcutIcon = {$resDir}Public/Icons/favicon.ico
+
+### CSS einbinden
+page.includeCSS{
+    5  = {$css}bootstrap.min.css
+    10 = {$css}normalize.css
+    15 = {$css}font-awesome.min.css
+    20 = {$css}icomoon.css
+    25 = {$css}animate.css
+    30 = {$css}prettyPhoto.css
+    35 = {$css}owl.carousel.css
+    40 = {$css}owl.theme.default.css
+    45 = {$css}transitions.css
+    50 = {$css}main.css
+    55 = {$css}color.css
+    60 = {$css}responsive.css
+}
+
+### JavaScript im HEAD-Bereich einbinden
+page.includeJS{
+    10 = {$js}vendor/modernizr-2.8.3-respond-1.4.2.min.js
+    10.external = 1
+    10.disableCompression = 1
+}
+
+
+### JavaScript im Footer einbinden
+page.includeJSFooterlibs {
+    10 = {$js}jquery-library.js
+    }
+
+page.includeJSFooter{
+    10 = {$js}vendor/bootstrap.min.js
+    10.disableCompression = 1
+    20 = {$js}mapclustering/data.json
+    30 = https://maps.google.com/maps/api/js?key=AIzaSyCR-KEWAVCn52mSdeVeTqZjtqbmVJyfSus&language=en
+    30.external = 1
+    40 = {$js}mapclustering/markerclusterer.min.js
+    40.disableCompression = 1
+    50 = {$js}mapclustering/infobox.js
+    60 = {$js}mapclustering/map.js
+    70 = {$js}owl.carousel.min.js
+    70.disableCompression = 1
+    80 = {$js}isotope.pkgd.js
+    90 = {$js}prettyPhoto.js
+    100 = {$js}countdown.js
+    110 = {$js}collapse.js
+    120 = {$js}moment.js
+    130 = {$js}gmap3.js
+    140 = {$js}main.js
+}
+
+page.10 = FLUIDTEMPLATE
+page.10{
+    layoutRootPath  = {$layouts}
+    partialRootPath  = {$partials}
+    #templateRootPath = {$templates}
+    file = {$templates}DefaultTemplate.html
+
+
+    siteTitle = TEXT
+    siteTitle{
+        value = HomePage
+        stdWrap.typolink.parameter = t3://page?uid=59
+        stdWrap.typolink.title = zur Startseite
+        wrap =<h2>|</h2>
+
+    variables{
+        backendLayout = CASE
+        backendLayout {
+            key.data = pageLayout
+
+            pagets__Homepage                = TEXT
+            pagets__Homepage.value          = Homepage
+
+            pagets__Jumbotron               = TEXT
+            pagets__Jumbotron.value         = Jumbotron
+
+            pagets__1Spalt_100              = TEXT
+            pagets__1Spalt_100.value        = 1Spalt_100
+
+            pagets__2Spalt_33_66            = TEXT
+            pagets__2Spalt_33_66.value      = 2Spalt_33_66
+
+            pagets__3Spalt_25_50_25         = TEXT
+            pagets__3Spalt_25_50_25.value   = 3Spalt_25_50_25
+
+            default < .pagets__1Spalt_100
+
+        }
+    }
+    }
+}

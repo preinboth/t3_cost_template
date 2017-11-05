@@ -1,0 +1,39 @@
+{
+    "modules": [],
+    "properties": {
+        "backendModules": [],
+        "description": "",
+        "emConf": {
+            "category": "misc",
+            "custom_category": "",
+            "dependsOn": "typo3 => 8.7.0-8.7.99\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "skipGenerateDocumentationTemplate": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "8.7.0-8.7.99",
+            "version": "1.0.0"
+        },
+        "extensionKey": "cost_template",
+        "name": "CodeStorage Template",
+        "originalExtensionKey": "cost_template",
+        "originalVendorName": "CodeStorage",
+        "persons": [
+            {
+                "company": "CodeStorage",
+                "email": "typo3@codestorage.de",
+                "name": "Peter Reinboth",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [],
+        "vendorName": "CodeStorage"
+    },
+    "wires": [],
+    "log": {
+        "last_modified": "2017-10-31 01:02",
+        "extension_builder_version": "8.7.0",
+        "be_user": " (2)"
+    }
+}

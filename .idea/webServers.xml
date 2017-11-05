@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="1256f59a-3de4-4d8a-8e29-2b5ffdf1ecea" name="cost_template" url="http://p213363.mittwaldserver.info">
+        <fileTransfer host="p213363.mittwaldserver.info" port="22" rootFolder="/html/T3/T3_8_dev/typo3conf/ext/cost_template" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

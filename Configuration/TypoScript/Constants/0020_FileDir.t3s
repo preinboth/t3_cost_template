@@ -1,0 +1,23 @@
+ext         = EXT:cost_template
+
+resDir      = {$ext}/Resources/
+
+private     = {$resDir}Private/
+public      = {$resDir}Public/
+
+config      = {$ext}/Configuration/
+
+templates   = {$resDir}Private/Templates/
+partials    = {$resDir}Private/Partials/
+layouts     = {$resDir}Private/Layouts/
+
+css         = {$public}Css/
+js          = {$public}JavaScript/
+
+tsConfig    = {$config}TSconfig/
+typoScript  = {$config}TypoScript/
+backendLayouts = {$tsConfig}BackendLayouts/
+
+shariff     = {$public}Shariff/
+
+

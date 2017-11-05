@@ -1,0 +1,8 @@
+<INCLUDE_TYPOSCRIPT:source="DIR:EXT:cost_template/Configuration/TSconfig/" extensions="t3s">
+
+<INCLUDE_TYPOSCRIPT:source="DIR:EXT:cost_template/Configuration/TypoScript/Content/" extensions="t3s">
+<INCLUDE_TYPOSCRIPT:source="DIR:EXT:cost_template/Configuration/TypoScript/Extensions/" extensions="t3s">
+<INCLUDE_TYPOSCRIPT:source="DIR:EXT:cost_template/Configuration/TypoScript/Libary/" extensions="t3s">
+<INCLUDE_TYPOSCRIPT:source="DIR:EXT:cost_template/Configuration/TypoScript/Navigation/" extensions="t3s">
+<INCLUDE_TYPOSCRIPT:source="DIR:EXT:cost_template/Configuration/TypoScript/Page/" extensions="t3s">
+

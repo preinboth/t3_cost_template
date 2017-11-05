@@ -1,0 +1,34 @@
+mod.web_layout.BackendLayouts {
+	## 3Spalt 25% 50% 25%
+	3Spalt_25_50_25 {
+		title = 3Spalt 25% 50% 25%
+		icon = {$resDir}Public/Icons/belayout_homepage.png
+		config {
+			backend_layout {
+				colCount = 4
+				rowCount = 1
+				rows {
+					1 {
+						columns {
+							1 {
+								name = LeftSide
+								colPos = 1
+							}
+
+							2 {
+								name = Content
+								colspan = 2
+								colPos = 0
+							}
+
+							3 {
+								name = RightSide
+								colPos = 2
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

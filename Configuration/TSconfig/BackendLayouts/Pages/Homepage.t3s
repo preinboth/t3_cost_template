@@ -1,0 +1,29 @@
+## BackendLayouts definieren
+## Spalten:
+## colPos 0 = Normal
+## colPos 1 = Links
+## colPos 2 = Rechts
+## colPos 3 = Rand
+mod.web_layout.BackendLayouts {
+	## Homepage / Startseite
+	Homepage {
+		title = Homepage
+		icon = {$resDir}Public/Icons/BackendLayouts/belayout_homepage.png
+		config {
+			backend_layout {
+				colCount = 1
+				rowCount = 1
+				rows {
+					1 {
+						columns {
+							1 {
+								name = Content
+								colPos = 0
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

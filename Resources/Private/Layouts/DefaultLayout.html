@@ -1,0 +1,284 @@
+<p>DefaultLayout</p>
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+<!--************************************
+        Wrapper Start
+*************************************-->
+<div id="tg-wrapper" class="tg-wrapper">
+    <!--************************************
+            Header Start
+    *************************************-->
+    <header id="tg-header" class="tg-header tg-haslayout">
+        <!-- Partial Topbar -->
+        <div class="clearfix"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+                        <!-- Partial Header/Logo -->
+
+                    <div class="tg-navigationarea">
+                        <!-- Partial Mainnav -->
+                        <f partial="Navigation/Mainnav"/>
+                        <!-- Partial Header/Search -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--************************************
+            Header End
+    *************************************-->
+
+    <!--************************************
+            Inner Banner Start / Breadcrumb
+    *************************************-->
+    <div class="tg-innerbanner">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <!-- Partial Breadcrumb -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--************************************
+            Inner Banner End / Breadcrumb
+    *************************************-->
+    <!--************************************
+            Main Start
+    *************************************-->
+    <main id="tg-main" class="tg-main tg-haslayout">
+        <div class="container">
+            <div class="row">
+                <!-- Inhalt / Content -->
+
+                <f:if condition="{backendLayout}=='Homepage'">
+                    <f:render section="Homepage"/>
+                </f:if>
+
+                <f:if condition="{backendLayout}=='1Spalt_100'">
+                    <f:render section="1Spalt_100"/>
+                </f:if>
+
+                <f:if condition="{backendLayout}=='2Spalt_33_66'">
+                    <f:render section="2Spalt_33_66"/>
+                </f:if>
+
+                <f:if condition="{backendLayout}=='3Spalt_25_50_25'">
+                    <f:render section="3Spalt_25_50_25"/>
+                </f:if>
+
+                <f:if condition="{backendLayout}=='Tutorial'">
+                    <f:render section="Tutorial"/>
+                </f:if>
+
+            </div>
+        </div>
+    </main>
+    <!--************************************
+            Main End
+    *************************************-->
+    <!--************************************
+            Footer Start
+    *************************************-->
+    <footer id="tg-footer" class="tg-footer tg-haslayout">
+        <f:render partial="Structure/Footer/SignupBox"/>
+        <!-- Partial Footer/SignupBox -->
+
+        <div class="tg-footermiddlebar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                        <div class="tg-widget tg-widgetcompanyinfo">
+                            <div class="tg-widgetcontent">
+                                <strong class="tg-logo"><a href="index.html"><img src="images/logo2.png" alt="image description"></a></strong>
+                                <div class="tg-description">
+                                    <p>Consectetur adipisicing elit sed do eiusmod tempor inunt labore... <a href="javascript:void(0);">Read More</a></p>
+                                </div>
+                                <ul class="tg-infolist">
+                                    <li>
+                                        <i class="icon-location"></i>
+                                        <address>Abc, xyz street London, HG521A</address>
+                                    </li>
+                                    <li>
+                                        <i class="icon-phone-handset"></i>
+                                        <span>0800 - 1234 - 562 - 6</span>
+                                    </li>
+                                    <li>
+                                        <i class="icon-printer"></i>
+                                        <span>+4 1234 567 - 9</span>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:query@domain.com">
+                                            <i class="icon-envelope"></i>
+                                            <span>query@domain.com</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="tg-socialicons">
+                                    <li class="tg-facebook"><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="tg-twitter"><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="tg-linkedin"><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
+                                    <li class="tg-googleplus"><a href="javascript:void(0);"><i class="fa fa-google-plus"></i></a></li>
+                                    <li class="tg-rss"><a href="javascript:void(0);"><i class="fa fa-rss"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                        <div class="tg-widget tg-widgettweets">
+                            <div class="tg-widgettitle">
+                                <h3>Latest Tweets</h3>
+                            </div>
+                            <div class="tg-widgetcontent">
+                                <ul>
+                                    <li>
+                                        <p>Sed ut perspiciatis unde omnis isteat natus error sit voluptatem</p>
+                                        <span><a href="mailto:http://www.domainurl.com">http://www.domainurl.com</a></span>
+                                        <time datetime="2017-01-01">2 hours ago</time>
+                                    </li>
+                                    <li>
+                                        <p>Sed ut perspiciatis unde omnis isteat natus error sit voluptatem</p>
+                                        <span><a href="mailto:http://www.domainurl.com">http://www.domainurl.com</a></span>
+                                        <time datetime="2017-01-01">3 hours ago</time>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                        <div class="tg-widget tg-widgetcoursecategories">
+                            <div class="tg-widgettitle">
+                                <h3>Course Categories</h3>
+                            </div>
+                            <div class="tg-widgetcontent">
+                                <ul>
+                                    <li><a href="javascript:void(0);">Perspiciatis ate</a></li>
+                                    <li><a href="javascript:void(0);">Aomnis isteat</a></li>
+                                    <li><a href="javascript:void(0);">Canatus error</a></li>
+                                    <li><a href="javascript:void(0);">Voluptatem clu</a></li>
+                                    <li><a href="javascript:void(0);">Commodo</a></li>
+                                    <li><a href="javascript:void(0);">Consequat</a></li>
+                                    <li><a href="javascript:void(0);">Duis aute</a></li>
+                                    <li><a href="javascript:void(0);">Aincididunt</a></li>
+                                    <li><a href="javascript:void(0);">Alter veritatis</a></li>
+                                    <li><a href="javascript:void(0);">Tempora Incid</a></li>
+                                    <li><a href="javascript:void(0);">Dolore Magnam</a></li>
+                                    <li><a href="javascript:void(0);">Aliquam Quaerat</a></li>
+                                    <li><a href="javascript:void(0);">Quisquam</a></li>
+                                    <li><a href="javascript:void(0);">Voluptatem</a></li>
+                                    <li><a href="javascript:void(0);">Aliquip</a></li>
+                                    <li><a href="javascript:void(0);">Adipisicing</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                        <div class="tg-widget tg-widgetflickrgallery">
+                            <div class="tg-widgettitle">
+                                <h3>Flickr Gallery</h3>
+                            </div>
+                            <div class="tg-widgetcontent">
+                                <ul>
+                                    <li>
+                                        <figure>
+                                            <a href="javascript:void(0);"><img src="images/glance/img-10.jpg" alt="image description"></a>
+                                            <figcaption><a href="#"><i class="fa fa-mail-forward"></i></a></figcaption>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <a href="javascript:void(0);"><img src="images/glance/img-11.jpg" alt="image description"></a>
+                                            <figcaption><a href="#"><i class="fa fa-mail-forward"></i></a></figcaption>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <a href="javascript:void(0);"><img src="images/glance/img-12.jpg" alt="image description"></a>
+                                            <figcaption><a href="#"><i class="fa fa-mail-forward"></i></a></figcaption>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <a href="javascript:void(0);"><img src="images/glance/img-13.jpg" alt="image description"></a>
+                                            <figcaption><a href="#"><i class="fa fa-mail-forward"></i></a></figcaption>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <a href="javascript:void(0);"><img src="images/glance/img-14.jpg" alt="image description"></a>
+                                            <figcaption><a href="#"><i class="fa fa-mail-forward"></i></a></figcaption>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <a href="javascript:void(0);"><img src="images/glance/img-15.jpg" alt="image description"></a>
+                                            <figcaption><a href="#"><i class="fa fa-mail-forward"></i></a></figcaption>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <a href="javascript:void(0);"><img src="images/glance/img-16.jpg" alt="image description"></a>
+                                            <figcaption><a href="#"><i class="fa fa-mail-forward"></i></a></figcaption>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <a href="javascript:void(0);"><img src="images/glance/img-17.jpg" alt="image description"></a>
+                                            <figcaption><a href="#"><i class="fa fa-mail-forward"></i></a></figcaption>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <a href="javascript:void(0);"><img src="images/glance/img-18.jpg" alt="image description"></a>
+                                            <figcaption><a href="#"><i class="fa fa-mail-forward"></i></a></figcaption>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <a href="javascript:void(0);"><img src="images/glance/img-19.jpg" alt="image description"></a>
+                                            <figcaption><a href="#"><i class="fa fa-mail-forward"></i></a></figcaption>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <a href="javascript:void(0);"><img src="images/glance/img-20.jpg" alt="image description"></a>
+                                            <figcaption><a href="#"><i class="fa fa-mail-forward"></i></a></figcaption>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <a href="javascript:void(0);"><img src="images/glance/img-21.jpg" alt="image description"></a>
+                                            <figcaption><a href="#"><i class="fa fa-mail-forward"></i></a></figcaption>
+                                        </figure>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tg-footerbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <span class="tg-copyright">Copyright &copy; 2017 All Rights Reserved</span>
+                        <nav class="tg-addnav">
+                            <ul>
+                                <li><a href="javascript:void(0);">Privacy Policy</a></li>
+                                <li><a href="javascript:void(0);">Term and Conditions</a></li>
+                                <li><a href="javascript:void(0);">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--************************************
+            Footer End
+    *************************************-->
+</div>

@@ -1,0 +1,23 @@
+mod.web_layout.BackendLayouts {
+	## 2Spalt (33% - 66%)
+	2Spalt_33_66 {
+		title = 2Spalt (33% - 66%)
+		icon = {$resDir}Public/Icons/belayout_homepage.png
+		config {
+			backend_layout {
+				colCount = 1
+				rowCount = 1
+				rows {
+					1 {
+						columns {
+							1 {
+								name = Content
+								colPos = 0
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

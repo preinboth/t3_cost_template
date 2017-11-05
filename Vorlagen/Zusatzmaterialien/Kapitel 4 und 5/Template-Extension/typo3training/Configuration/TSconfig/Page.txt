@@ -1,0 +1,103 @@
+## Backend-Layouts definieren
+mod.web_layout.BackendLayouts {
+
+    ## Homepage
+    1 {
+        title = Homepage
+        icon = EXT:typo3training/Resources/Public/Icons/belayout_homepage.png
+        config {
+            backend_layout {
+                colCount = 3
+                rowCount = 2
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = Jumbotron
+                                colspan = 3
+                                colPos = 3
+                            }
+                        }
+                    }
+                    2 {
+                        columns {
+                            1 {
+                                name = Links
+                                colPos = 1
+                            }
+                            2 {
+                                name = Mitte
+                                colPos = 0
+                            }
+                            3 {
+                                name = Rechts
+                                colPos = 2
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    ## 2 Spalten (2/3 - 1/3)
+    2 {
+        title = 2 Spalten (2/3 - 1/3)
+        icon = EXT:typo3training/Resources/Public/Icons/belayout_2col.png
+        config {
+            backend_layout {
+                colCount = 3
+                rowCount = 1
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = Hauptinhalt
+                                colspan = 2
+                                colPos = 0
+                            }
+                            2 {
+                                name = Rechts
+                                colPos = 2
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    ## 1 Spalte (100%)
+    3 {
+        title = 1 Spalte (100%)
+        icon = EXT:typo3training/Resources/Public/Icons/belayout_1col.png
+        config {
+            backend_layout {
+                colCount = 1
+                rowCount = 1
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = Hauptinhalt
+                                colPos = 0
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+TCEFORM.tt_content.header_layout{
+    altLabels {
+        0 = h2 - Themenueberschrift
+        1 = h1 - Seitenueberschrift
+        2 =
+        3 = h3 - Ueberschrift 3.Ordnung
+        4 = h4 - Ueberschrift 4.Ordnung
+        5 = h5 - Ueberschrift 5.Ordnung
+    }
+    removeItems = 2,4,5
+}

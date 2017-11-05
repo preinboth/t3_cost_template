@@ -1,0 +1,43 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+.navbar-brand {
+    padding: 0 15px;
+}
+
+/* System-Erweiterung form */
+.csc-mailform ol,
+.csc-mailform li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.csc-mailform label strong {
+    display: block;
+    color: #f00;
+}
+
+.csc-mailform li {
+    overflow: hidden;
+    margin: 0 0 1em 0;
+}
+
+.csc-mailform label {
+    float: left;
+    width: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

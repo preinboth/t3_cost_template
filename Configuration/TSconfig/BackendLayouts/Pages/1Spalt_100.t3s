@@ -1,0 +1,23 @@
+mod.web_layout.BackendLayouts {
+	## 1Spalt_100
+	1Spalt_100 {
+		title = 1Spalt_100
+		icon = {$resDir}Public/Icons/belayout_homepage.png
+		config {
+			backend_layout {
+				colCount = 1
+				rowCount = 1
+				rows {
+					1 {
+						columns {
+							1 {
+								name = Content
+								colPos = 0
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

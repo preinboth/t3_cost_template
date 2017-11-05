@@ -1,0 +1,39 @@
+{
+    "modules": [],
+    "properties": {
+        "backendModules": [],
+        "description": "Unsere erste Template-Extension",
+        "emConf": {
+            "category": "templates",
+            "custom_category": "",
+            "dependsOn": "typo3 => 7.6.0-7.6.99\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "skipGenerateDocumentationTemplate": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "7.6.0-7.6.99",
+            "version": "0.0.1"
+        },
+        "extensionKey": "typo3training",
+        "name": "TYPO3-Training",
+        "originalExtensionKey": "",
+        "originalVendorName": "",
+        "persons": [
+            {
+                "company": "",
+                "email": "",
+                "name": "Wolfgang Wagner",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [],
+        "vendorName": "Rheinwerk"
+    },
+    "wires": [],
+    "log": {
+        "last_modified": "2016-01-08 01:54",
+        "extension_builder_version": "7.6.0",
+        "be_user": " (1)"
+    }
+}

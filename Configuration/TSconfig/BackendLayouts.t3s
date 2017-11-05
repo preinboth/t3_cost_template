@@ -1,0 +1,3 @@
+<INCLUDE_TYPOSCRIPT:source="DIR:EXT:cost_template/Configuration/TSconfig/BackendLayouts/" extensions="t3s">
+<INCLUDE_TYPOSCRIPT:source="DIR:EXT:cost_template/Configuration/TSconfig/BackendLayouts/News/" extensions="t3s">
+<INCLUDE_TYPOSCRIPT:source="DIR:EXT:cost_template/Configuration/TSconfig/BackendLayouts/Pages/" extensions="t3s">
