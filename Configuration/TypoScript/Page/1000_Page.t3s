@@ -82,8 +82,7 @@ page.10 = FLUIDTEMPLATE
 page.10{
     layoutRootPath  = {$layouts}
     partialRootPath  = {$partials}
-    #templateRootPath = {$templates}
-    file = {$templates}DefaultTemplate.html
+    file = EXT:cost_template/Resources/Private/Templates/DefaultTemplate.html
 
 
     siteTitle = TEXT

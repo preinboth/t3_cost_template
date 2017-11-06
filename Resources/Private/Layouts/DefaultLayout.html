@@ -1,6 +1,6 @@
 <p>DefaultLayout</p>
 <!--[if lt IE 8]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 <!--************************************
         Wrapper Start
@@ -16,12 +16,13 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
-                        <!-- Partial Header/Logo -->
-
+                    <!-- Partial Header/Logo -->
+                    <f:render partial="Structure/Header/Logo"
                     <div class="tg-navigationarea">
                         <!-- Partial Mainnav -->
-                        <f partial="Navigation/Mainnav"/>
+                        <f:render partial="Navigation/Mainnav"/>
                         <!-- Partial Header/Search -->
+                        <f:render partial="Structure/Header/HeaderSearch"/>
                     </div>
                 </div>
             </div>
@@ -54,32 +55,34 @@
             <div class="row">
                 <!-- Inhalt / Content -->
 
-                <f:if condition="{backendLayout} == 'Homepage'">
-                    <f:render section="Homepage" />
-                </f:if>
+                <!-- <f:if condition="{backendLayout}=='Homepage'"> -->
+                    <p>Section Homepage</p>
+                    <f:render section="Homepage"/>
+                <!-- </f:if> -->
 
-                <f:if condition="{backendLayout}=='1Spalt_100'">
-                    <f:render section="1Spalt_100"/>
-                </f:if>
+                <!--
+              <f:if condition="{backendLayout}=='1Spalt_100'">
+                  <f:render section="1Spalt_100" />
+              </f:if>
 
-                <f:if condition="{backendLayout}=='2Spalt_33_66'">
-                    <f:render section="2Spalt_33_66"/>
-                </f:if>
+              <f:if condition="{backendLayout}=='2Spalt_33_66'">
+                  <f:render section="2Spalt_33_66" />
+              </f:if>
 
-                <f:if condition="{backendLayout}=='3Spalt_25_50_25'">
-                    <f:render section="3Spalt_25_50_25"/>
-                </f:if>
+              <f:if condition="{backendLayout}=='3Spalt_25_50_25'">
+                  <f:render section="3Spalt_25_50_25" />
+              </f:if>
 
-                <f:if condition="{backendLayout}=='Tutorial'">
-                    <f:render section="Tutorial"/>
-                </f:if>
-
-            </div>
-        </div>
-    </main>
-    <!--************************************
-            Main End
-    *************************************-->
+              <f:if condition="{backendLayout}=='Tutorial'">
+                  <f:render section="Tutorial" />
+              </f:if>
+-->
+          </div>
+      </div>
+  </main>
+  <!--************************************
+          Main End
+  *************************************-->
     <!--************************************
             Footer Start
     *************************************-->
